@@ -1,0 +1,40 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+
+.menu {
+    @include gradient;
+
+    li {
+        padding: 0 0.7rem;
+        display: inline-block;
+        list-style: outside none none;
+
+        a{
+            
+            &:hover {
+                color: $gray-900 !important;
+            }
+            color: $white !important;
+            text-transform: capitalize;
+            font-weight: 600;
+            position: relative;
+            text-decoration: none;
+            transition: all .3s linear;
+        }
+
+        .active {
+            color: $gray-900 !important;
+        }
+       
+    }
+
+    .navbar-toggler {
+        border: 0 !important;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+  
+}

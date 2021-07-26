@@ -1,0 +1,22 @@
+html,
+body,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer; 
+}
+button:focus,
+.btn.focus, 
+.btn:focus{
+    outline:0;
+    box-shadow: none;
+}
